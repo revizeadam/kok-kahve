@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kök Kahve: Anadolu'nun kahve kültürünü keşfetmek için hazırlanmış örnek web projesi.">
+  <title>Kök Kahve — Bir fincan, bin hikâye.</title>
+  <link rel="stylesheet" href="style.css"><script src="app.js" defer></script>
+</head>
+<body>
+  <div class="announcement">ANADOLU’NUN KAHVE HİKÂYELERİNE BİR DAVET <span>• Örnek öğrenme projesi</span></div>
+  <header class="header wrap">
+    <a href="#" class="logo" aria-label="Kök Kahve ana sayfa">kök<span>K A H V E</span></a>
+    <nav aria-label="Ana menü"><a href="#kahveler">Kahvelerimiz</a><a href="#hikaye">Hikâyemiz</a><a href="#rituel">Demleme rehberi</a></nav>
+    <button class="cart-button" id="open-cart">Sepet <span id="cart-count">0</span></button>
+  </header>
+  <main>
+    <section class="hero wrap">
+      <div class="hero-copy"><p class="eyebrow">TOPRAĞINDAN GELENEĞİNE</p><h1>Bir yudum ,<br>çok <em>hatıra.</em></h1><p>Her yörenin bir kokusu, her fincanın bir hatırası var. Anadolu’nun kahve kültürünü birlikte keşfedelim.</p><a class="button" href="#kahveler">Kahveleri keşfet <span>↗</span></a><div class="hero-note"><span>01 / 03</span> Gelenekten ilham, fincanda buluşma.</div></div>
+      <div class="hero-art" role="img" aria-label="Bakır renkli bir fincanda kahve illüstrasyonu"><div class="art-top">KÖK KAHVE ATÖLYESİ <span>EST. 2026</span></div><div class="ring ring-one"></div><div class="ring ring-two"></div><div class="saucer"><div class="cup-handle"></div><div class="cup"><div class="coffee"></div></div></div><div class="art-label">Yavaşla.<br><em>Bir kahve molası ver.</em></div><span class="art-stamp">YÖRESEL<br>LEZZETLER<br>✳</span></div>
+    </section>
+    <div class="ticker">KÖKLÜ BİR KÜLTÜR <span>✳</span> ÖZENLE HAZIRLANAN KARIŞIMLAR <span>✳</span> PAYLAŞILAN ANLAR <span>✳</span> BİR FİNCAN MOLASI</div>
+    <section id="kahveler" class="products wrap section">
+      <div class="section-heading"><div><p class="eyebrow">YÖREDEN FİNCANA</p><h2>Senin kahven hangisi?</h2></div><p>Tanıdık bir kokunun peşinden git.<br>Yeni bir ritüele yer aç.</p></div>
+      <div class="filters" role="group" aria-label="Kahve filtreleri"><button class="active" data-filter="all" aria-pressed="true">Tüm kahveler</button><button data-filter="klasik" aria-pressed="false">Klasikler</button><button data-filter="yoresel" aria-pressed="false">Yöresel tatlar</button><button data-filter="aromali" aria-pressed="false">Aromalı</button></div>
+      <div id="product-grid" class="product-grid"></div><p class="demo-note">Ürünler ve fiyatlar eğitim amaçlı örnektir. Gerçek sipariş ve ödeme alınmaz.</p>
+    </section>
+    <section id="hikaye" class="story"><div class="wrap story-inner"><div><p class="eyebrow">BİZİM HİKÂYEMİZ</p><h2>Köklerimiz gelenekte.<br>Merakımız <em>yarında.</em></h2></div><div><p>Kök Kahve, Anadolu’nun kahve etrafında kurduğu sofralardan ilham alan hayalî bir marka. Bir fincanın yalnızca bir içecek değil, sohbet için açılan bir alan olduğuna inanıyoruz.</p><p>Bu site de aynı merakla doğdu: tasarlamak, kodlamak ve öğrendiklerimizi paylaşmak için.</p><a href="#rituel" class="text-link">Kendi kahve ritüelini keşfet ↗</a></div></div></section>
+    <section id="rituel" class="wrap section"><div class="section-heading"><div><p class="eyebrow">KÜÇÜK BİR MOLA REHBERİ</p><h2>İyi kahve aceleye gelmez.</h2></div><span class="guide-label">CEZVE RİTÜELİ / 3 ADIM</span></div><div class="steps"><article><span>01</span><h3>Ölçünü bul.</h3><p>Bir fincan su ve damak tadına göre yaklaşık iki çay kaşığı Türk kahvesini cezveye ekle.</p></article><article><span>02</span><h3>Yavaşça pişir.</h3><p>Pişirmeden önce karıştır. Kısık ateşte köpük yükselmeye başlayana kadar bekle; taşırmadan ocaktan al.</p></article><article><span>03</span><h3>Anın tadını çıkar.</h3><p>Fincana yavaşça dök. Telvenin çökmesi için kısa bir süre bekle, yanında bir bardak suyla sun.</p></article></div></section>
+  </main>
+  <footer><div class="wrap footer-inner"><a class="logo" href="#">kök<span>K A H V E</span></a><p>Bir fincanla başlayan güzel sohbetlere.</p><span>© 2026 · Eğitim projesi</span></div></footer>
+  <dialog id="cart-dialog" aria-labelledby="cart-title"><div class="cart-heading"><h2 id="cart-title">Kahve sepetin</h2><button id="close-cart" aria-label="Sepeti kapat">✕</button></div><div id="cart-items"></div><div class="total">Toplam <strong id="cart-total">0 ₺</strong></div><p class="demo-note">Bu bir deneme sepetidir. Ödeme ve sipariş işlemi yoktur.</p><button class="button" id="clear-cart">Sepeti temizle</button></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body></html>
